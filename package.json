@@ -10,7 +10,7 @@
     "astro": "astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro",
     "cz": "cz",
-    "prepare": "husky"
+    "prepare": "husky && git config --local core.editor cat"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
