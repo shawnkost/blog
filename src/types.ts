@@ -4,4 +4,5 @@ export type Site = {
   desc: string;
   title: string;
   postPerPage: number;
+  ogImage: string;
 };
