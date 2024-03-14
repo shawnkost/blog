@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root,
+  html[data-theme='light'] {
+    --color-bg-base: 251, 254, 251;
+    --color-text-base: 40, 39, 40;
+    --color-accent: 0, 108, 172;
+  }
+  html[data-theme='dark'] {
+    --color-bg-base: 44, 38, 44;
+    --color-text-base: 234, 237, 243;
+    --color-accent: 249, 129, 38;
+  }
+  body {
+    @apply bg-base flex min-h-[100svh] flex-col font-mono text-base;
+  }
+  section {
+    @apply mx-auto max-w-3xl px-4;
+  }
+}
