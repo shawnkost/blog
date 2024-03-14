@@ -14,6 +14,10 @@ export default {
 				base: 'rgb(var(--color-bg-base))',
 				accent: 'rgb(var(--color-accent))',
 			},
+			fill: {
+				base: 'rgb(var(--color--base))',
+				accent: 'rgb(var(--color-accent))',
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],

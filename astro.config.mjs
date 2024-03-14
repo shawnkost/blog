@@ -8,5 +8,6 @@ import { SITE } from "./src/config"
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
-  integrations: [tailwind(), react(), sitemap()]
+  integrations: [tailwind(), react(), sitemap()],
+  scopedStyleStrategy: 'where'
 });
