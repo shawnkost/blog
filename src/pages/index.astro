@@ -1,16 +1,32 @@
 ---
-
+import Layout from '@layouts/Layout.astro';
 ---
 
-<html lang='en'>
-  <head>
-    <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='viewport' content='width=device-width' />
-    <meta name='generator' content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-  </body>
-</html>
+<Layout>
+  <main>
+    <section id='hero'>
+      <h1>Hi there, I'm Shawn <span>Kost</span>👋</h1>
+      <p>
+        I'm a software engineer and I write about programming, web development,
+        and other tech topics. I am passionate about helping others, and getting
+        more people interested in Web Development, so I am currently teaching at
+        a coding bootcamp.
+      </p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  #hero {
+    @apply pb-6 pt-8;
+  }
+  #hero h1 {
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-4xl;
+  }
+  #hero span {
+    @apply text-accent;
+  }
+  #hero p {
+    @apply my-2;
+  }
+</style>
