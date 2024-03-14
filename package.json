@@ -1,6 +1,5 @@
 {
   "name": "blog",
-  "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
@@ -8,9 +7,12 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "format:check": "prettier --check . --plugin=prettier-plugin-astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro",
     "cz": "cz",
-    "prepare": "husky && git config --local core.editor cat"
+    "prepare": "husky && git config --local core.editor cat",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
